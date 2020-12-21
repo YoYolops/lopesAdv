@@ -49,6 +49,7 @@ function Footer() {
 
             <div id="map-container">
                 <iframe
+                    title="Localização"
                     src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3959.820076232344!2d-37.28016158522649!3d-7.030423294921871!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x7af603f23aafd01%3A0xc67f414a023047eb!2sR.%20do%20Prado%2C%20169%20-%20Centro%2C%20Patos%20-%20PB%2C%2058700-515!5e0!3m2!1spt-BR!2sbr!4v1608576395115!5m2!1spt-BR!2sbr"
                     width="100%"
                     height="250"

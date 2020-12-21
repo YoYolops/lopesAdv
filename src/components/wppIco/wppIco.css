@@ -1,0 +1,61 @@
+#wp-container {
+    margin: 20px;
+    width: 60px;
+    height: 60px;
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    border-radius: 60px;
+    justify-content: space-between;
+    background-color: green;
+    overflow: hidden;
+    opacity: 0.6;
+    z-index: 2;
+}
+
+#wp-container:hover {
+    width: 160px;
+    cursor: pointer;
+    animation: slideWhatsIco;
+    background-color: #34af23;
+    opacity: 1;
+    animation-duration: 0.6s;
+}
+
+.whats-ico {
+    justify-content: center;
+    display: inline-block;
+}
+
+.wp-text {
+    display: none;
+}
+
+@keyframes slideWhatsIco {
+    from {
+        width: 60px;
+        background-color: green;
+        opacity: 0.6;
+    }
+
+    to {
+        width: 160px;
+        background-color: #34af23;
+        opacity: 1;
+    }
+}
+
+#wp-container .active-text {
+    width: 90px ;
+    height: 40px ;
+    display: inline-block;
+    background-color: #34af23;
+}
+
+.active-text:hover {
+    color: white;
+}
+
+.ico-svg {
+    margin: 9.5px;
+}

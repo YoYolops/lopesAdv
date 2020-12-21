@@ -1,0 +1,170 @@
+
+#home-container {
+    display: block;
+    width: 100%;
+    height: 100%;
+}
+
+p {
+    font-size: 1.3rem;
+    line-height: 30px;
+}
+
+.block-text {
+    margin: 0px;
+    padding: 60px;
+    width: 60%;
+    column-count: 2;
+    column-gap: 40px;
+}
+
+.p1 {
+    margin-bottom: 10px;
+}
+
+#crossfade {
+    height: 800px;
+    margin-bottom: 60px;
+}
+
+#crossfade > img { 
+    width: 100%;
+    height: 800px;
+    position: absolute;
+    top: 80px;
+    left: 0px;
+    color: transparent;
+    opacity: 0;
+    z-index: 0;
+    animation-timing-function: ease-in-out;
+    animation: imageAnimation 15s linear infinite 0s; 
+}
+
+#crossfade > img:nth-child(1) {
+    animation-delay: 10s;
+}
+
+#crossfade > img:nth-child(2) {
+    animation-delay: 5s;
+}
+
+#crossfade > img:nth-child(3) {
+    animation-delay: 0s;
+}
+
+@keyframes imageAnimation {
+    0% { opacity: 1 }
+    27% { opacity: 1 }
+    33% { opacity: 0 }
+    93% { opacity: 0 }
+    100% { opacity: 1 }
+}
+
+#contato-img {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.bg-image{
+    width: 100%;
+    height: 400px;
+    background-attachment: fixed;
+    background-size: cover;
+    padding: 100px;
+    display: inline-flex;
+    flex: 1;
+    justify-content: space-around;
+}
+
+.block-icon{
+    background-color: rgba(19, 19, 19, 0.75);
+    width: 170px;
+    height: 170px;
+    border-radius: 170px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.block-icon:hover {
+    background-color: rgba(5, 5, 5, 1);
+    transition-delay: 70ms;
+    cursor: pointer;
+}
+
+#mid-icon {
+    padding-bottom: 10px;
+}
+
+#contato-img{
+    background-image: url('../../media/ceu-noturno.jpg');
+}
+
+
+@media screen and (max-width: 980px){
+    
+    .block-text{
+        width: 100%;
+    }
+
+    #crossfade {
+        height: 600px;
+    }
+
+    #crossfade img {
+        height: 600px;
+    }
+
+}
+
+@media screen and (max-width: 720px){
+    #contato-img {
+        height: 600px;
+    }
+
+    #bot-icon {
+        margin-top: 10px;
+    }
+
+    #crossfade {
+        height: 550px;
+    }
+
+    #crossfade img {
+        height: 550px;
+    }
+}
+
+@media screen and (max-width: 650px){
+    
+    .block-text{
+        display: flex;
+        flex-direction: column;
+    }
+
+    #crossfade {
+        height: 500px;
+    }
+
+    #crossfade img {
+        height: 500px;
+    }
+}
+
+@media screen and (max-width: 550px){
+    #contato-img {
+        height: 900px;
+    }
+
+    #mid-icon {
+        margin-top: 10px;
+    }
+
+    #crossfade {
+        height: 400px;
+    }
+
+    #crossfade img {
+        height: 400px;
+    }
+}
